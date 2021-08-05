@@ -1,0 +1,18 @@
+<section class="search-bar-navi-section">
+  <div class="container">
+    <div class="navigation">
+      <form class="search-form">
+        <mat-form-field floatLabel="never" class="example-full-width" appearance="fill">
+          <mat-label>Search...</mat-label>
+          <input matInput #input
+          [(ngModel)]="searchInput" [ngModelOptions]="{standalone: true}"
+          (input)="onInputChange($event)">
+        </mat-form-field>
+      </form>
+      <div class="nav-buttons-container">
+        <button mat-flat-button (click)="onLoadTop10()" >Top 10 {{ isMovieType ? "TV Shows" : "Movies"}}</button>
+        <button mat-flat-button (click)="onLoadAll()">Show all</button>
+      </div>
+    </div>
+  </div>
+</section>

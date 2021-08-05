@@ -1,0 +1,44 @@
+::ng-deep .search-bar-navi-section {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  // padding: 20px;
+  margin-bottom: 20px;
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+
+  .search-form {
+    background: white;
+    width: 100%;
+
+    .mat-form-field {
+      width: 100%;
+    }
+  }
+}
+
+.nav-buttons-container {
+  display: flex;
+  column-gap: 8px;
+}
+
+::ng-deep .mat-form-field-wrapper {
+  padding-bottom: 0;
+}
+::ng-deep .mat-form-field-underline {
+  bottom: 0;
+}
+::ng-deep .mat-form-field-subscript-wrapper {
+  display: none;
+}
+
+
+@media only screen and (max-width: 560px) {
+  ::ng-deep .navigation {
+    flex-direction: column !important;
+  }
+}

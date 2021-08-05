@@ -1,0 +1,34 @@
+<section class="movie-list-section">
+  <div class="container">
+    <mat-card class="example-card" *ngFor="let movie of movies">
+      <div class="image-container">
+        <span class="star-left-top">{{ movie?.avg_rating }}</span>
+        <div mat-card-avatar class="example-header-image">
+          <ngx-stars [readonly]="true" [size]="1" [maxStars]="1" [color]="'gold'" [initialStars]="1"></ngx-stars>
+        </div>
+        <div class="background-image" style="background-image: url({{movie.cover_image}})"></div>
+      </div>
+
+      <div class="card-content-right">
+        <mat-card-header>
+          <mat-card-title>{{ movie.title }} ({{ movie.release_date | date:'YYYY'}})</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            {{ movie.description }}
+          </p>
+          <p>
+            Cast: <i>{{ movie.cast_actors }}</i>
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button (click)="onOpenRatingModal(movie)">RATE</button>
+        </mat-card-actions>
+      </div>
+    </mat-card>
+
+    <div class="load-more-container">
+      <button mat-raised-button color="primary" *ngIf="isLoadMoreEnabled" (click)="onLoadMore()">Load more ...</button>
+    </div>
+  </div>
+</section>

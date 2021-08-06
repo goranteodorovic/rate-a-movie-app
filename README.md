@@ -1,27 +1,33 @@
-# RateAMovieClient
+# Rate-a-Movie Client
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
+> My first Rate-a-Movie app / A client created to work strictly with the Rate-a-Movie API.
 
-## Development server
+> Allows: Fetching data from the corresponding API; Searching from an input field; Rating each Movie / Tv Show.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+> Angular version: 12.1.4
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Install
 
-## Build
+```sh
+npm install
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Usage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+ng serve
+```
 
-## Running end-to-end tests
+## Author
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+👤 **Goran Teodorovic**
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Questions
+If You have any questions, do not hasitate to contact via
+
+E-mail: goran.teodorovic988@gmail.com
+
+Phone: +387 65 409 024
